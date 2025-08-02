@@ -112,7 +112,6 @@ const Homepage = () => (
       ))}
     </section>
 
-    {/* --- ADVERTISEMENT SECTION ADDED HERE --- */}
     <section className="ad-section">
       <p>Advertisement</p>
     </section>
