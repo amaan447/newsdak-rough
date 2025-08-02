@@ -2,27 +2,30 @@ import React from "react";
 import "../styles/Homepage.css";
 
 const featuredArticleData = {
-  imageUrl: "https://placehold.co/800x450/e2e8f0/334155?text=Featured+Image",
+  imageUrl:
+    "https://uawc-pal.org/wp-content/uploads/2025/04/Gaza-Famine-scaled.jpg",
   category: "CRIME SCENE DO NOT CROSS",
-  title: "Manhunt for ex-US soldier suspected of killing 4 in Montana bar",
+  title:
+    "UAWC Statement on Famine in Gaza: Starvation as a Weapon of Genocide - Union of Agricultural Work Committees (UAWC)",
   summary:
-    "Police have told residents to stay home and not approach the suspect, who could be 'armed and dangerous'.",
+    "The Union of Agricultural Work Committees (UAWC) urgently draws attention to the deepening famine in the Gaza Strip, a catastrophe deliberately manufactured through the Israeli genocidal war. Since March 2, 2025, the Israeli occupation has prevented entry of all food or humanitarian aid into Gaza. On Monday, April 7, Israeli Finance Minister Bezalel Smotrich reaffirmed the Israeli commitment to enforcing famine in Gaza, declaring that “not even a grain of wheat” would be allowed into Gaza. This is not policy failure; this is a calculated campaign of mass starvation.",
   date: "2 Aug 2025",
 };
 
 const smallArticlesData = [
   {
     id: 1,
-    imageUrl: "https://placehold.co/300x200/e2e8f0/334155?text=Story+1",
-    title:
-      "Indonesian president frees hundreds of prisoners as part of unity plan",
+    imageUrl:
+      "https://www.aljazeera.com/wp-content/uploads/2025/08/AP21194543182185-1-1754106510.jpg?resize=770%2C513&quality=80",
+    title: "Manhunt for ex-US soldier suspected of killing 4 in Montana bar",
     date: "2 Aug 2025",
   },
   {
     id: 2,
-    imageUrl: "https://placehold.co/300x200/e2e8f0/334155?text=Story+2",
+    imageUrl:
+      "https://www.aljazeera.com/wp-content/uploads/2025/08/AP25213583791231-1754102142.jpg?resize=770%2C513&quality=80",
     title:
-      "Epstein victims claim 'cover up' as Maxwell moved to low security prison",
+      "Indonesian president frees hundreds of prisoners as part of unity plan",
     date: "2 Aug 2025",
   },
 ];
@@ -30,35 +33,31 @@ const smallArticlesData = [
 const articleListData = [
   {
     id: 1,
-    title: "Russia-Ukraine war: List of key events, day 1,255",
-    imageUrl: "https://placehold.co/100x75/e2e8f0/334155?text=Thumb+1",
+    title:
+      "Epstein victims claim ‘cover up’ as Maxwell moved to low-security prison",
+
+    imageUrl:
+      "https://www.aljazeera.com/wp-content/uploads/2023/06/AP23060190601874-1687881435.jpg?resize=770%2C513&quality=80",
   },
   {
     id: 2,
     title:
-      "Dangerous Mekong River pollution blamed on lawless mining in Myanmar",
-    imageUrl: "https://placehold.co/100x75/e2e8f0/334155?text=Thumb+2",
+      "Dangerous Mekong River pollution blamed on lawless mining in Myanmarr",
+    imageUrl:
+      "https://www.aljazeera.com/wp-content/uploads/2025/07/Fishermen-Laos-Fabio-Polese-5-1753863906.jpg?resize=770%2C513&quality=80",
   },
   {
     id: 3,
     title:
       "Another US citizen killed by Israeli settlers' attack in West Bank: Family",
-    imageUrl: "https://placehold.co/100x75/e2e8f0/334155?text=Thumb+3",
+    imageUrl:
+      "https://www.aljazeera.com/wp-content/uploads/2025/08/2025-08-01T141552Z_115079070_RC2RXFAMDPE4_RTRMADP_3_UKRAINE-CRISIS-KOSTIANTYNIVKA-1754093058.jpg?resize=770%2C513&quality=80s",
   },
   {
     id: 4,
     title: "Ukraine's Zelensky calls for 'unconditional' ceasefire with Russia",
-    imageUrl: "https://placehold.co/100x75/e2e8f0/334155?text=Thumb+4",
-  },
-  {
-    id: 5,
-    title: "Ukraine's Zelensky calls for 'unconditional' ceasefire with Russia",
-    imageUrl: "https://placehold.co/100x75/e2e8f0/334155?text=Thumb+5",
-  },
-  {
-    id: 6,
-    title: "Ukraine's Zelensky calls for 'unconditional' ceasefire with Russia",
-    imageUrl: "https://placehold.co/100x75/e2e8f0/334155?text=Thumb+6",
+    imageUrl:
+      "https://www.aljazeera.com/wp-content/uploads/2025/07/Fishermen-Laos-Fabio-Polese-5-1753863906.jpg?resize=770%2C513&quality=80",
   },
 ];
 
@@ -111,6 +110,11 @@ const Homepage = () => (
       {articleListData.map((item) => (
         <ArticleListItem key={item.id} data={item} />
       ))}
+    </section>
+
+    {/* --- ADVERTISEMENT SECTION ADDED HERE --- */}
+    <section className="ad-section">
+      <p>Advertisement</p>
     </section>
   </main>
 );
